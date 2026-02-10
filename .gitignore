@@ -1,0 +1,38 @@
+# Sensitive directories
+others/
+
+# Environment files
+.env
+.env.*
+!.env.example
+*.vars
+.dev.vars
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+dist-ssr/
+.wrangler/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor directories
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Misc
+*.local

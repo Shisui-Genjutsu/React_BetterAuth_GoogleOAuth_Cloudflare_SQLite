@@ -1,0 +1,53 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ba-gouth-apis",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-02-09",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "enable_nodejs_process_v2"
+  ],
+  "vars": {
+    "BETTER_AUTH_SECRET": "",
+    "BETTER_AUTH_URL": "",
+    "CLOUDFLARE_ACCOUNT_ID": "",
+    "CLOUDFLARE_DATABASE_ID": ""
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "gouth-d1",
+      "database_id": "",
+      "migrations_dir": "./migrations"
+    }
+  ]
+  // "vars": {
+  //   "MY_VAR": "my-variable"
+  // },
+  // "kv_namespaces": [
+  //   {
+  //     "binding": "MY_KV_NAMESPACE",
+  //     "id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  //   }
+  // ],
+  // "r2_buckets": [
+  //   {
+  //     "binding": "MY_BUCKET",
+  //     "bucket_name": "my-bucket"
+  //   }
+  // ],
+  // "d1_databases": [
+  //   {
+  //     "binding": "MY_DB",
+  //     "database_name": "my-database",
+  //     "database_id": ""
+  //   }
+  // ],
+  // "ai": {
+  //   "binding": "AI"
+  // },
+  // "observability": {
+  //   "enabled": true,
+  //   "head_sampling_rate": 1
+  // }
+}
